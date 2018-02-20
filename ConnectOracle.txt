@@ -8,6 +8,7 @@ public class ConnectOracle {
     public static void main(String[] args) {  
   
         try {  
+#testing the code
             
              DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());//Register driver  
             
