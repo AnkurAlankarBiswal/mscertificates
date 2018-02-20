@@ -1,0 +1,7 @@
+E:\server\webapps\ROOT\WEB-INF\lib\servlet-api.jar;E:\server\webapps\ROOT\WEB-INF\lib\ojdbc14.jar;
+
+C:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar;.;
+
+
+
+C:\Program Files\Apache Software Foundation\Tomcat 6.0\webapps\ROOT\WEB-INF\lib\servlet-api.jar;C:\Program Files\Apache Software Foundation\Tomcat 6.0\webapps\ROOT\WEB-INF\lib\\ojdbc14.jar;

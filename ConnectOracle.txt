@@ -1,0 +1,40 @@
+import java.sql.Connection;  
+import java.sql.DriverManager;  
+import java.sql.ResultSet;  
+import java.sql.Statement;  
+
+public class ConnectOracle {  
+  
+    public static void main(String[] args) {  
+  
+        try {  
+            
+             DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());//Register driver  
+            
+             System.out.println("Connecting to the database...");  
+            
+         Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "admin");  
+            
+             Statement statement = connection.createStatement();  
+             
+             ResultSet resultset = statement.executeQuery("select * from emp");  
+            
+             while(resultset.next())
+              {  
+                 String s = resultset.getString("id"); 
+                 String s1 = resultset.getString("name"); 
+                 String s2=resultset.getString("salary");
+                 System.out.println(s+" "+s1);  
+                   
+              } 
+                 statement.close();  
+                connection.close();
+   
+           }catch (Exception e) {  
+            System.out.println("The exception raised is:" + e);  
+        
+            
+        }  
+     }  
+  
+  }  
